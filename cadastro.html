@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="framework.css">
+</head>
+<body class="bodyCadastro">
+    <header id="headerPadrao">
+        <div class="logo">
+            <img src="RRWINES_LOGO_PNG (1).png" Logo exemplo">
+            <form id="buscaHome">
+              <input type="text" id="buscaInput" placeholder="Encontre seu vinho..." />
+              <button class="buttonHome" type="button" onclick="search()">Buscar</button>
+            </form>
+            <div id="result"></div>
+      </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <div class="imagemCadastro"></div>
+    <div class="form-container">
+        <h2>Cadastro</h2>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+    
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email..." required>
+    
+            <label for="telefone">Número de Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone..." required>
+    
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço..." required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade..." required>
+    
+    
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

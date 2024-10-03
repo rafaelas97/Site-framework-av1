@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serra das Uvas</title>
+    <link rel="stylesheet" href="framework.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body class="bodyHome">
+    <header id="headerHome">
+        <div class="logoHome">
+            <img src="RRWINES_LOGO_PNG (1).png" Logo exemplo">
+            <form id="buscaHome">
+              <input type="text" id="buscaInput" placeholder="Encontre seu vinho..." />
+              <button class="buttonHome" type="button" onclick="search()">Buscar</button>
+            </form>
+            <div id="result"></div>
+      </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+        <button class="buttonL" onclick="toggleBox()">Entrar</button>
+
+    <div class="boxl" id="boxl">
+        <div class="loginHome">
+            <h2 class="letraLogin">Login</h2>
+            <form action="/login" method="POST">
+                <label for="username" class="letraLogin">Nome de Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu login..." required>
+    
+                <label for="password" class="letraLogin">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha..." required>
+    
+                <input type="submit" value="Entrar">
+            </form>
+            <a href="cadastro.html" class="linkcadastro">Não tem conta? Registre-se</a>
+        </div>
+    
+    </div>
+
+    <script>
+        function toggleBox() {
+            var box = document.getElementById("boxl");
+            if (box.style.display === "none") {
+                box.style.display = "block"; // Mostra a box
+            } else {
+                box.style.display = "none"; // Oculta a box
+            }
+        }
+    </script>
+    </header>    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100" alt="Imagem 3">
+            </div>
+            <div class="carousel-item">
+                <img src="4.jpg" class="d-block w-100" alt="Imagem 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    <footer>
+        <p>® 2024 Wines R&R</p>
+    </footer>
+</body>
+</html>
